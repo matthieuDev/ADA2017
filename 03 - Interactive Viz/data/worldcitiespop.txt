@@ -40,7 +40,7 @@ gb,london,London,H9,7421228.0,51.514125,-0.093689
 gr,athens,Athens,35,729139.0,37.9833333,23.7333333
 hr,zagreb,Zagreb,21,698967.0,45.8,16.0
 hu,budapest,Budapest,05,1708088.0,47.5,19.083333
-is,reykjavik,Reykjavík,10,113907,64.15,-21.95
+is,reykjavik,Reykjavik,10,113907,64.15,-21.95
 ie,dublin,Dublin,07,1024027.0,53.3330556,-6.2488889
 it,rome,Rome,07,2643736.0,41.9,12.483333
 lt,vilnius,Vilnius,65,542381.0,54.6833333,25.3166667
