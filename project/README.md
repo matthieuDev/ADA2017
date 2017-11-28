@@ -47,7 +47,15 @@ Note that votes are anonymized. Thus, it is not possible to get reliable data on
 
 - **November 21st** : By then we expect to be set on how good our visualization can get and have selected what are the best things to show. A draft of the report (or story) is done with the main structure set.
 
-# Pending improvements
+# A list of internal milestones up until final milestone
+ - **December 5th** : The ML implementation is complete. Ideas for pertinent uses of this technique are listed with stub graphs implemented.
+ - **December 12th** : Graphs are complete, data story structure set.
+ - **December 19th** : Work is complete.
+
+# Next objectives
+We plan to implement machine learning techniques to analyse divides within the country. To do this, we will create vectors of n dimensions, n being the number of votations. Each dimension will represent the score of the associated votation. We will then be able to compute which communities/districts/cantons are closer to each other, which will allow us to extract clusters of regions which will hopefully allow us to group regions and see whether "röstigraben" is still or thing, or if other divides have taken over. This will also be feasible per-theme. Our reasoning between this idea is that we feel it is not appropriate to sort votation topics by how liberal or conservative they are, and thus we cannot just aggregate votation scores together to get "liberal scores" for each region. We think our approach will allow us to understand the complexity of opinions in our country.
+
+# Pending miscellaneous improvements
 - The json map data represents certain lakes as communities. These will have to be ignored in the future to have clean maps.
 - As many communities have merged over the years, our data needs some adjustments to take these changes in consideration correctly.
 - We plan to give the maps a more elegant feel by not having the underlying topographic map, which is useless, underneath the data.
