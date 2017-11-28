@@ -47,6 +47,10 @@ Note that votes are anonymized. Thus, it is not possible to get reliable data on
 
 - **November 21st** : By then we expect to be set on how good our visualization can get and have selected what are the best things to show. A draft of the report (or story) is done with the main structure set.
 
+# Pending improvements
+- The json map data represents certain lakes as communities. These will have to be ignored in the future to have clean maps.
+- As many communities have merged over the years, our data needs some adjustments to take these changes in consideration correctly.
+- We plan to give the maps a more elegant feel by not having the underlying topographic map, which is useless, underneath the data.
 
 # Questions for TAa
  
