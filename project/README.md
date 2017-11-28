@@ -60,6 +60,9 @@ We plan to implement machine learning techniques to analyse divides within the c
 - As many communities have merged over the years, our data needs some adjustments to take these changes in consideration correctly.
 - We plan to give the maps a more elegant feel by not having the underlying topographic map, which is useless, underneath the data.
 
+# Observations
+We can see on the maps that there are differences between french and german speaking people, but these differences are not uniform, which leads us to question the pertinence of the language differences as the only causes of opinion differences.
+
 # Questions for TAa
  
  Not yet, but some will come during our work :)
