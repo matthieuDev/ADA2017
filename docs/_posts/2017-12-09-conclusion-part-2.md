@@ -8,8 +8,8 @@ Intro
 Interpretation des resultats
 
 
-## Introduction des youngs data
-pk utiliser des donnees plus jeunes (villes campagnes)
+## Introduction analyse par decennies
+pk 
 limitation du au nombre
-quel methode utiliser (ml et
+quel methode utiliser (ml)
 
