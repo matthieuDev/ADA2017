@@ -38,7 +38,12 @@ To visualize our data, we use the `Folium` plugin for Python to generate maps us
 
 
 # Introduction structure of the story
-sommaire
-pk les donnees sont presentes comme ca
+In this data story we will use two methods: simple aggregation of data (for example adding the voting results of all years) and clustering using K-Means and DBSCAN. We will try to extract as much relevant information as possible from that. Our data is given at the community level (there are about 3'000 communities in Switzerland). What we will look at is the following, using several methods when we see fit:
+
+- Repartition of languages in the country
+- Raw results
+- Results by theme (8 different themes)
+- Comparison with party recommendations
+
 A FAIRE QUAND LE RESTE EST FAIT
 
