@@ -81,7 +81,7 @@ Another meaningful information we have is the recommendations of parties for eac
 
 From these results we can notice tendancies that can be confirmed by many of us: parties with more liberal and progressive policies tend to be more supported in urban regions and in the French and Italian speaking regions, while the opposite is true for more conservative parties.
 
-discuss results
+It has to be noticed that there are no "super-winners" or "super-losers" among parties, by that we mean that no party's policies are almost 100% correlated with votation outcomes, regardless of the party or the region. We do notice clear peaks of various shapes for some, but overall this shows that Switzerland's political landscape is wide and diverse. The most flagrant division is along the so-called "Röstigraben" and "Polentagraben" for some smaller parties, but bigger parties like UDC, PS, PLR or PDC, although we do see a divide, are not really the subjects of biggest divisions we noticed here.
 
 ## Conclusion 
 
