@@ -77,7 +77,7 @@ Intro
 </div>
 
 <img src="{{ site.github.url }}/assets/data/map_recommendation_cluster/kmeans_AdI.png" id="image_cluster">
-<a href="{{ site.github.url }}/assets/data/map_recommendation_cluster/kmeans_AdI.html" id="map_cluster"> see the full html here
+<a href="{{ site.github.url }}/assets/data/map_recommendation_cluster/kmeans_AdI.html" id="map_cluster"> see the full html here</a>
 
 <div style="display: none;" id="pca_div">
 <img src="{{ site.github.url }}/assets/data/map_recommendation_cluster/AdIPCAA_kmeans2.png" id="pca_image">
