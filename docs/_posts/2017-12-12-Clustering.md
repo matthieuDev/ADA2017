@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Clustering"
+title: "Clustering of municipalities"
 ---
 
 
@@ -108,7 +108,7 @@ Through this post we identified regions in Switzerland with similar voting behav
 
 Our results are meaningful as the algorithm and the data we used make a total abstraction of underlying geographical or linguistic features in the country. Yet, we can identify them clearly using only the votation data.
 
-To go further in our analysis, we may consider to process old and recent votations in order to see if this behavior is changing over time. This is the subject of a further post.
+To go further in our analysis, we may consider to process old and recent votations in order to see if this behavior is changing over time. It is also possible that our results have been influenced by strong components in specific timeframe which would make the results not representative of more recent voting patterns. This is the subject of a further post.
 
 
 
