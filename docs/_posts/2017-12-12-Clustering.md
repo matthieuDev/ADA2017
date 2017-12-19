@@ -8,21 +8,21 @@ title: "Clustering"
 
 ### Introduction
 
-Introduction 
+In this part, we are going to take a closer look at our votations data and try to identify distinct communities with different votation pattern in Switzerland. In order to do so, we will use only the votation dataset and more specifically the results (in % Yes) of all the the municipalities for all the votations since 1981 to nowadays as one single period of time (we are going to make the same exercise in a later post but analysing the data per decades). The clustering methods used here are Kmeans and DBSCAN introduced earlier. 
 
 
 ### Kmeans map
 
-Intro
+
 
 <input type="button" onclick="display_pca()" id="pca_button" value="Display PCA">
 
 <figure>
 <select onchange="theThingToDoIfItChange()" id="selection">
-	  <option value="kmeans2">kmeans2</option>
-      <option value="kmeans3">kmeans3</option>
-      <option value="kmeans4">kmeans4</option>
-      <option value="kmeans5">kmeans5</option>
+	  <option value="kmeans2">Kmeans, k=2</option>
+      <option value="kmeans3">kmeans, k=3</option>
+      <option value="kmeans4">kmeans, k=3</option>
+      <option value="kmeans5">kmeans, k=4</option>
 </select>
 </figure>
 
@@ -34,7 +34,7 @@ Intro
 <img src="{{ site.github.url }}/assets/data/map_ml/PCAA_kmeans2.png" id="pca_image">
 </div>
 
-
+###Analysis
 
 
 	
