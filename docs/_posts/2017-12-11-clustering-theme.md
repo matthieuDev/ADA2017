@@ -52,8 +52,8 @@ Now that we have implemented clustering, we can restrict the data by specific th
 
 
 <div style="display: none;" id="comp_div">
-<img src="{{ site.github.url }}/assets/data/map_theme/map_AdI.png" id="image">
-<a href="{{ site.github.url }}/assets/data/map_theme/map_AdI.html" id="map"> see the full html here</a>
+<img src="{{ site.github.url }}/assets/data/map_theme/Economy.png" id="image">
+<a href="{{ site.github.url }}/assets/data/map_theme/Economy.html" id="map"> see the full html here</a>
 </div>
 
 <img src="{{ site.github.url }}/assets/data/maps_theme_ml/kmeans_Economy.png" id="image_cluster">
