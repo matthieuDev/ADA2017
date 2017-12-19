@@ -39,7 +39,7 @@ Our main objective in this project is to implement machine learning techniques, 
 To visualize our data, we use the `Folium` plugin for Python to generate maps using our results and geographical data taken from [MapZen.come](www.mapzen.com) that we have slightly modified for various reasons, including community mergers, wrong orthograph in names of locations and various inconsistencies with the boundaries of certain communities.
 
 
-### Introduction structure of the story
+### Structure of the story
 In this data story we will use two methods: simple aggregation of data (for example adding the voting results of all years) and clustering using K-Means and DBSCAN. We will try to extract as much relevant information as possible from that. Our data is given at the community level (there are about 3'000 communities in Switzerland). What we will look at is the following, using several methods when we see fit:
 
 - Communes that win and lose the most votation
@@ -47,7 +47,7 @@ In this data story we will use two methods: simple aggregation of data (for exam
 - Raw results
 - Results by theme (8 different themes)
 - Comparison with party recommendations
-- Clustering with kmeans and dbscan
+- Clustering with K-means and DBSCAN
 - Clustering of the commune with K-means and DBSCAN using themes and votations
 - Evolution of clusters by decades
 
@@ -90,6 +90,6 @@ In this data story we will use two methods: simple aggregation of data (for exam
 
 {{"# Conclusion
 
-From all we have seen above, this is what we would like to conclude: the _Röstigraben_ might be going away, but we are going to need many more years of data to strengthen that affirmation. We have seen vacillations in the divide over the last years of our data, which could indicate that the shift will further itself. But one thing has to be underlined: divides can be multidimensional. Switzerland does not suffer from the polarized political climate we are witnessing in the US, and it seems that depending on issues, divides will vary between the language difference, the density of the population and the type of landscape the community is in.
+From all we have seen above, this is what we would like to conclude: the _Röstigraben_ might be going away, but we are going to need many more years of data to strengthen that affirmation. We have seen vacillations in the divide over the last years of our data, which could indicate that the shift will further itself, but the divide is clearly still there, we see this in the per-decade clustering and the per-party clustering. But one thing has to be underlined: divides can be multidimensional. Switzerland does not suffer from the polarized political climate we are witnessing in the US, and it seems that depending on issues, divides will vary between the language difference, the density of the population and the type of landscape the community is in, and are overall less marked than with parties for example.
 
 "  | markdownify }}
