@@ -4,37 +4,33 @@ title: "Clustering"
 ---
 
 
-
-
 ### Introduction
 
-In this part, we are going to take a closer look at our votations data and try to identify distinct communities with different votation pattern in Switzerland. In order to do so, we will use only the votation dataset and more specifically the results (in % Yes) of all the the municipalities for all the votations since 1981 to nowadays as one single period of time (we are going to make the same exercise in a later post but analysing the data per decades). The clustering methods used here are Kmeans and DBSCAN introduced earlier. 
+In this part, we are going to take a closer look at our votations data and try to identify distinct communities with different votation pattern in Switzerland. In order to do so, we will use only the votation dataset and more specifically the results (in % Yes) of all the the municipalities for all the votations since 1981 to nowadays as one single period of time (we are going to make the same exercise in a later post but analysing the data per decades). The clustering methods used here are K-means and DBSCAN introduced earlier. 
 
 
-### Kmeans map
-
-
+### Kmeans maps
 
 <input type="button" onclick="display_pca()" id="pca_button" value="Display PCA">
 
 <figure>
 <select onchange="theThingToDoIfItChange()" id="selection">
-	  <option value="kmeans2">Kmeans, k=2</option>
-      <option value="kmeans3">kmeans, k=3</option>
-      <option value="kmeans4">kmeans, k=3</option>
-      <option value="kmeans5">kmeans, k=4</option>
+	  <option value="kmeans2">K-means, k=2</option>
+      <option value="kmeans3">k-means, k=3</option>
+      <option value="kmeans4">k-means, k=4</option>
+      <option value="kmeans5">k-means, k=5</option>
 </select>
 </figure>
 
 <img src="{{ site.github.url }}/assets/data/map_ml/kmeans2.png" id="image">
-<a href="{{ site.github.url }}/assets/data/map_ml/kmeans2.html" id="map"> see the full html here
+<a href="{{ site.github.url }}/assets/data/map_ml/kmeans2.html" id="map"> See the full map here</a>
 <p id="text">Hello World!</p>
 
 <div style="display: none;" id="pca_div">
 <img src="{{ site.github.url }}/assets/data/map_ml/PCAA_kmeans2.png" id="pca_image">
 </div>
 
-###Analysis
+###Analysis and discussion
 
 
 	
