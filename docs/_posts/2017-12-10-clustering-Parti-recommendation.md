@@ -13,15 +13,7 @@ li {
 </style>
 </head>
 
-### Introduction
-
-Introduction 
-
-
-### Presentation map theme
-
-Intro
-
+Let us now look at our party data clusterized using K-means and DBSCAN. This time around, DBSCAN was able to give us more interesting results as the clusters are much more defined compared to the theme clustering. We are interested to see whether party allegiance is a defining factor of the _Röstigraben_ phenomenon.
 
 <figure>
 <div>
@@ -150,9 +142,8 @@ Intro
 		
 	</script>
 </figure>
-analyse results
 
-discuss results
+### Analysis & Discussion
 
-## Conclusion 
+An interesting feature in the PCAs is that almost all parties have two clear elongated clusters that display a very clear occurence of the _Röstigraben_. We were not expecting to see that clear of a cut. We can see that there seems to be a big relation between what parties recommend to vote and what different regions will vote. The parties that do not feature clear clusters are mostly either very small or very new, which leads us to think that these two big clusters would eventually appear for any party of a certain size and age. We can even see how closely related the PLS and PRD were before their fusion, as their clusters are almost identical.
 
