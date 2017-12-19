@@ -6,7 +6,7 @@ title: "Clustering"
 
 ### Introduction
 
-In this part, we are going to take a closer look at our votations data and try to identify distinct communities with different votation pattern in Switzerland. In order to do so, we will use only the votation dataset and more specifically the results (in % Yes) of all the the municipalities for all the votations since 1981 to nowadays as one single period of time (we are going to make the same exercise in a later post but analysing the data per decades). The clustering methods used here are K-means and DBSCAN introduced earlier. Please note that the clustering is performed without dimension reduction as it is possible to run the algorithms in reasonable time. The PCA drown are here to verify if the clustering happened correctly, but the dimension reduction is performed _**after**_ the clustering.
+In this part, we are going to take a closer look at our votations data and try to identify distinct communities with different votation patterns in Switzerland. In order to do so, we will use only the votation dataset and more specifically the results (in % Yes) of all the the municipalities for all the votations since 1981 to nowadays as one single period of time (we are going to make the same exercise in a later post but analysing the data per decades). The clustering methods used here are K-means and DBSCAN introduced earlier. Please note that the clustering is performed without dimension reduction as it is possible to run the algorithms in reasonable time. The PCA drown are here to verify if the clustering happened correctly, but the dimension reduction is performed _**after**_ the clustering.
 
 
 ### Kmeans maps
