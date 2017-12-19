@@ -45,7 +45,7 @@ Intro
 
 
 
-<div style="" id="one_year">
+<div style="" id="one_year_clustbydec">
 <figure>
 <select onchange="theThingToDoIfItChange_clustbydec()" id="selection_year_clustbydec">
       <option value="1980">1981to1989</option>
@@ -132,7 +132,7 @@ Intro
 		
 		function display_pca_clustbydec() {
 		let button = document.getElementById("pca_button_clustbydec");
-		let div = document.getElementById("pca_div");
+		let div = document.getElementById("pca_div_clustbydec");
 		
 		if(button.value == "Display PCA") {
 			button.setAttribute("value","Hide PCA");
