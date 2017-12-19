@@ -30,13 +30,15 @@ In this part, we are going to take a closer look at our votations data and try t
 <img src="{{ site.github.url }}/assets/data/map_ml/PCAA_kmeans2.png" id="pca_image">
 </div>
 
-###Analysis and discussion
-####K-means, k=2
+### Analysis and discussion
+#### K-means, k=2
 When we try to classify our votation data into two categories, it is clear that two distinct communities appear. On one side the Romandy (French community) and on the other side the rest of Switzerland (German, Italian and Romansh communities). A reader may quickly take a look at our map of the languages spoken in Switzerland drawn in previous post.  Looking at the visualisation of the two first principal components of the PCA, we can see that the two categories are distinguishable by human eyes and the algorithm correctly classified them. Thus, we succesfully identify a _röschtigraben_ pattern in our data.
 
 This result is very _**strong**_ and lets quickly explain _why_. The K-mean algorithm here is does not use any _geographical_ or _linguistic_ features, i.e., the algorithm is unaware of the geographical position of a municipality or the language spoken there. Yet, _except_ few municipalities in Ticino classified with Romandy and few municipalities in _Berner Jura_ (which are attached to the canton of Bern mainly German speaking), the algorithm classified the municipalities into two geographical/linguistical categories corresponding to the _exact_ linguistic frontier between the French and the German communities in Switzerland. The existence of differences in votations patterns between French speaking and German speaking citizens in _**undeniable**_.
 
-####K-means, k=3
+It is also very important to note that K-means has essentially only one parameter which is the number of clusters. Thus, it is nearly impossible to influence it in order to _show a specific a result_. What may influence the final clusters in the iterative process of K-mean is the initial centers of the clusters and the number of iterations. In our case, we let _sklearn_ deals with its default values. Thus, the algorithm is run 10 times with different initial clusters centers chosen randomly with a maximum of 300 iterations if the convergence is not reached with fewer. The final result is the best classification of the 10 consecutive runs in terms of inertia, i.e., minimizing the within-cluster sum of squared.
+
+#### K-means, k=3
 
 	
 analyse results
