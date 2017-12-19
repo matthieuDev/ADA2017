@@ -30,12 +30,16 @@ To visualize our data, we use the `Folium` plugin for Python to generate maps us
 ### Introduction structure of the story
 In this data story we will use two methods: simple aggregation of data (for example adding the voting results of all years) and clustering using K-Means and DBSCAN. We will try to extract as much relevant information as possible from that. Our data is given at the community level (there are about 3'000 communities in Switzerland). What we will look at is the following, using several methods when we see fit:
 
+- Communes that win and lose the most votation
 - Repartition of languages in the country
 - Raw results
 - Results by theme (8 different themes)
 - Comparison with party recommendations
+- clustering with kmeans and dbscan
+- clustering of the commune with kmeans and dbscan using theme and using votation 
+- evolution of  clusters by decades
 
-A FAIRE QUAND LE RESTE EST FAIT"  | markdownify }}
+"  | markdownify }}
 
 
 {% for post in paginator.posts %}
