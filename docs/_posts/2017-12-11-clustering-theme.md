@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Theme Cluster"
+title: "Data clustering by theme"
 ---
 
 
@@ -13,15 +13,7 @@ li {
 </style>
 </head>
 
-### Introduction
-
-Introduction 
-
-
-### Presentation map theme
-
-Intro
-
+Now that we have implemented clustering, we can restrict the data by specific theme, and thus possibly observe division among themes. We will do this with both Kmeans and DBSCAN (which had a hard time giving us pertinent results here). Here we can compare the non-clustering solution with the clustering, and additionally we can look at the Principal Component Analysis (PCA) which gives valuable information as to why clusters look the way they do.
 
 <figure>
 <div>
@@ -36,21 +28,13 @@ Intro
 <figure>
 <select onchange="theThingToDoIfItChange()" id="selection_theme">
       <option value="Economy">Economy</option>
-      <option value="Education,culture,media">Education,culture,media</option>
+      <option value="Education,culture,media">Education, culture, media</option>
       <option value="Foreign policy">Foreign policy</option>
       <option value="Infrastructure, planning, environment">Infrastructure, planning, environment</option>
       <option value="Political regime">Political regime</option>
-      <option value="public finances">public finances</option>
-      <option value="security policy">security policy</option>
-      <option value="social policies">social policies</option>
-      <option value="Economy">Economy</option>
-      <option value="Education,culture,media">Education,culture,media</option>
-      <option value="Foreign policy">Foreign policy</option>
-      <option value="Infrastructure, planning, environment">Infrastructure, planning, environment</option>
-      <option value="Political regime">Political regime</option>
-      <option value="public finances">public finances</option>
-      <option value="security policy">security policy</option>
-      <option value="social policies">social policies</option>
+      <option value="public finances">Public finances</option>
+      <option value="security policy">Security policy</option>
+      <option value="social policies">Social policies</option>
 </select>
 
 <select onchange="theThingToDoIfItChange()" id="selection_cluster">
@@ -112,7 +96,7 @@ Intro
 				image_pca.setAttribute("src", "{{ site.github.url }}/assets/data/maps_theme_ml/"+selected_theme+"PCAA_"+selected_cluster+".png");
 			};
 			
-			document.getElementById("text").innerHTML = dict[selected];
+			document.getElementById("text").innerHTML = dict[selected_theme];
 		};
 		
 		
@@ -149,32 +133,22 @@ Intro
 		
 		
 		var dict = {
-      "Economy": "describe Economy",
-      "Education,culture,media": "describe Education,culture,media",
-      "Foreign policy": "describe Foreign policy",
-      "Infrastructure, planning, environment": "describe Infrastructure, planning, environment",
-      "Political regime": "describe Political regime",
-      "public finances": "describe public finances",
-      "security policy": "describe security policy",
-      "social policies": "describe social policies",
-      "Economy": "describe Economy",
-      "Education,culture,media": "describe Education,culture,media",
-      "Foreign policy": "describe Foreign policy",
-      "Infrastructure, planning, environment": "describe Infrastructure, planning, environment",
-      "Political regime": "describe Political regime",
-      "public finances": "describe public finances",
-      "security policy": "describe security policy",
-      "social policies": "describe social policies",
+      "Economy": "While DBSCAN fails to extract valuable info, we observe with Kmeans that there is a clear _Röstigraben_ when it comes to economical policies, although some regions like Central Switzerland are also part of the French-speaking cluster. The PCA here shows an interesting distribution that Kmeans didn't manage to split horizontally.",
+      "Education,culture,media": "We observe a much clearer divide here, with Western and Southern Switzerland quite in accordance on the subject. The PCA shows us however that the two groups are still clogged together.",
+      "Foreign policy": "One long cluster here split by the middle, we notice that _Röstigraben_ again here for foreign policy.",
+      "Infrastructure, planning, environment": "We see two clean clusters here that Kmeans successfully detected. We think this clear divide on infrastructure votations has to do with environmental issues.",
+      "Political regime": "A less clear _Röstigraben_ here on political regime. Our PCA shows that the divide is less evident. This is indeed not the most divisive issue in Switzerland.",
+      "public finances": "Again, quite a consensus on the subject of finances.",
+      "security policy": "The cluster is a bit wider this time, with Western Switzerland and Ticino are a bit more divided from the rest than for other issues.",
+      "social policies": "As we would expect, social policies are a more debatable subject, with two quite distinct clusters in the PCA, and very clean _Röstigraben_ and _Polentagraben_.",
       };
 
 
-		document.getElementById("text").innerHTML = dict ["map_AdI"];
+		document.getElementById("text").innerHTML = dict ["Economy"];
 		
 	</script>
 </figure>
-analyse results
 
-discuss results
+### Analysis & Discussion
 
-## Conclusion 
-
+The first thing we can notice is that some issues are more subjects of debate than others. The main suspects here are social policies, foreign policies and infrastucture/planning/environment, which us Swiss people can certify as being questions that divide people in our country. French-speaking Switzerland is known for being more open to questions like social assistance, the European Union and the environment. These clear cuts were expected and they reinforce the idea of a _Röstigraben_ in this country in the last decades. We can however get a glimpse of a city/countryside divide, although it is quite overshadowed by the language divide when looking at older data.
