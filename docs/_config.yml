@@ -3,6 +3,7 @@
 # Jekyll-paginate-v2 configuration
 #  pagination:
 #   enabled: true
+#   per_page: 20
 #   permalink: '/page/:num/'
 #   title: ':title - page :num of :max'
 #   limit: 0
@@ -10,6 +11,7 @@
 #   sort_reverse: true
 
 # jekyll-paginate configuration
+paginate:            20
 
 # Build settings
 markdown:            kramdown
