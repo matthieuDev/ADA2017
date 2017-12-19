@@ -66,7 +66,7 @@ Another meaningful information we have is the recommendations of parties for eac
       "map_PS": "For this party we see a clear disagreement between the German speaking regions, where support is low, and the others.",
       "map_PSL": "This party enjoys support mainly from German speaking regions, with high peaks in traditional Switzerland. Support in the other regions is about 50%.",
       "map_PST": "Very low support everywhere except French and Italian regions, where it is above 60% in a few areas.",
-      "map_PVL": "Surprising case here, where support is around 55% all over the country, except for one community where agreement tops above 80%.",
+      "map_PVL": "Support around 50% around the country with peaks around urban areas.",
       "map_Rep.": "Agreement with thie party is widely distributed, with peaks below 40% in Ticino and Jura and peaks above 70% in rural areas.",
       "map_UDC": "Support of this party is especially strong in the whole German speaking part of the country, with a clear difference in French speaking regions. Support is especially high in central Switzerland.",
       "map_UDF": "We see the same peaks in central Switzerland as UDC, but with most other regions relatively lower that with said party.",

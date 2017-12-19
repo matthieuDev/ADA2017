@@ -35,26 +35,26 @@ Intro
 
 <figure>
 <select onchange="theThingToDoIfItChange()" id="selection_party">
-      <option value="AdI">AdI</option>
-      <option value="DS">DS</option>
-      <option value="Lega">Lega</option>
-      <option value="MCR">MCR</option>
-      <option value="PBD">PBD</option>
-      <option value="PCS">PCS</option>
-      <option value="PDC">PDC</option>
-      <option value="PES">PES</option>
-      <option value="PEV">PEV</option>
-      <option value="PLR">PLR</option>
-      <option value="PLS">PLS</option>
-      <option value="POCH">POCH</option>
-      <option value="PRD">PRD</option>
-      <option value="PS">PS</option>
-      <option value="PSL">PSL</option>
-      <option value="PST">PST</option>
-      <option value="PVL">PVL</option>
-      <option value="Rep.">Rep.</option>
-      <option value="UDC">UDC</option>
-      <option value="UDF">UDF</option>
+      <option value="AdI">Alliance des Indépendants (Left, Liberal)</option>
+      <option value="DS">Démocrates Suisses (Conservative)</option>
+      <option value="Lega">Lega dei Ticinesi (Conservative)</option>
+      <option value="MCR">Mouvement Citoyens Romand (Right, Conservative)</option>
+      <option value="Rep.">Mouvement Républicain (Right, Conservative) [DEFUNCT]</option>
+      <option value="POCH">Organisations Progressistes de Suisse (Left, Liberal) [DEFUNCT]</option>
+      <option value="PSL">Parti des Automobilistes (Right, Conservative)</option>
+      <option value="PBD">Parti Bourgeois Démocratique (Center-Right, Liberal)</option>
+      <option value="PCS">Parti Chrétien Social (Center-Left)</option>
+      <option value="PDC">Parti Démocrate Chrétien (Center, Liberal)</option>
+      <option value="PES">Parti Ecologiste (Left, Liberal)</option>
+      <option value="PEV">Parti Evangélique (Center)</option>
+      <option value="PLR">Parti Libéral-Radical (Center-Right, Liberal)</option>
+      <option value="PLS">Parti Libéral (Center-Right, Liberal) [DEFUNCT]</option>
+      <option value="PRD">Parti Radical-Démocratique (Center-Right, Liberal) [DEFUNCT]</option>
+      <option value="PS">Parti Socialiste (Left, Liberal)</option>
+      <option value="PST">Parti Suisse du Travail (Far Left)</option>
+      <option value="UDC">Union Démocratique du Centre (Right, Conservative)</option>
+      <option value="UDF">Union Démocratique Fédérale (Right, Conservative)</option>
+      <option value="PVL">Verts Libéraux (Center, Liberal)</option>
 </select>
 
 <select onchange="theThingToDoIfItChange()" id="selection_cluster">
@@ -82,9 +82,6 @@ Intro
 <div style="display: none;" id="pca_div">
 <img src="{{ site.github.url }}/assets/data/map_recommendation_cluster/AdIPCAA_kmeans2.png" id="pca_image">
 </div>
-
-
-<p id="text">Hello World!</p>
 
 	
 <figure>
@@ -116,7 +113,7 @@ Intro
 				image_pca.setAttribute("src", "{{ site.github.url }}/assets/data/map_recommendation_cluster/"+selected_party+"PCAA_"+selected_cluster+".png");
 			};
 			
-			document.getElementById("text").innerHTML = dict[selected];
+			document.getElementById("text").innerHTML = dict[selected_party];
 		};
 		
 		
@@ -150,33 +147,6 @@ Intro
 		};
 		
 		};
-		
-		
-		var dict = {
-      "AdI": "describe AdI",
-      "DS": "describe DS",
-      "Lega": "describe Lega",
-      "MCR": "describe MCR",
-      "PBD": "describe PBD",
-      "PCS": "describe PCS",
-      "PDC": "describe PDC",
-      "PES": "describe PES",
-      "PEV": "describe PEV",
-      "PLR": "describe PLR",
-      "PLS": "describe PLS",
-      "POCH": "describe POCH",
-      "PRD": "describe PRD",
-      "PS": "describe PS",
-      "PSL": "describe PSL",
-      "PST": "describe PST",
-      "PVL": "describe PVL",
-      "Rep.": "describe Rep.",
-      "UDC": "describe UDC",
-      "UDF": "describe UDF",
-      };
-
-
-		document.getElementById("text").innerHTML = dict ["map_AdI"];
 		
 	</script>
 </figure>
