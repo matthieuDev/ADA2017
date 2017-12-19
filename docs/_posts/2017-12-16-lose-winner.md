@@ -68,7 +68,7 @@ Most winning voters :
 
 
 
-Least winning voters :
+least winning voters :
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -124,4 +124,11 @@ as they sound mostly German
  but we can see that the 
 the commune that tends to lose often have very few people (some have less than 100 voters) and on the other side the winners are 
 have a somewhat big population, but are not the most populated.
+
+
+## Conclusion 
+
+From what we see here, the Röstigraben is here not present but at its place 
+we can see a divide between the cities and the countryside, this not of course a proof of the end of this
+divide but we begin to see an other division in Switzerland.
 
